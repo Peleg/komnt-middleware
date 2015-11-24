@@ -1,0 +1,27 @@
+{
+  "name": "komnt-middleware",
+  "version": "1.0.0",
+  "description": "Express JS middleware to inject Komnt.js on the page for easy commenting on webpages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelegr/komnt-middleware.git"
+  },
+  "keywords": [
+    "komnt",
+    "comment",
+    "highlight",
+    "express",
+    "js",
+    "annotate"
+  ],
+  "author": "Peleg Rosenthal <peleg@teacherspayteachers.com> (http://peleg.co)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pelegr/komnt-middleware/issues"
+  },
+  "homepage": "https://github.com/pelegr/komnt-middleware#readme"
+}
