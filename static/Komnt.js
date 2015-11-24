@@ -1,22 +1,3 @@
-//
-// TODO:
-// * Use anchors in URL instead of query params (when possible). Query params
-// fuck up requests to some sites (Twitter)
-// * BeforeUnload, ask if wanna bookmark for later (w/annotations) and offer
-// bookmark btn from popup
-// * Short CSS Path can be shorter. Regex doesnt catch multiple classes or when
-// just tagname w/out class
-// * Limit chars/# of comments? (figure out what the max is)
-//
-// * Auto save when clicking out the box?
-// * Icons
-// * GH page, then push on twitter, yc, reddit
-//
-// * share link should generate a link with pre-JS ala: `javascript:if (extension
-// exists) take to page (else) create modal that will offer installing it. Click
-// on install should directly install it on machine
-//
-//
 
 (function (w, d) {
 
@@ -69,7 +50,6 @@
 
         return w.Komnt._isEnabled = false;
     };
-
 
     /**
      * Parses comments from URI and stores in this.comments

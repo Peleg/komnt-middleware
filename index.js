@@ -30,7 +30,8 @@ module.exports = function (app) {
   return function (req, res, next) {
     var write = res.write;
     res.write = function (chunk) {
-      if (!res.headersSent && ~res.getHeader('Content-Type').indexOf('text/html')) {
+      // only if html response and if buffer is complete
+      if (!res.headersSent && ~chunk.toString().indexOf('</html>')) {
         chunk instanceof Buffer && (chunk = chunk.toString());
         chunk = chunk
           .replace(/(<\/head>)/, staticFiles.tags.join("\n") + "\n\n$1")
