@@ -35,7 +35,7 @@ module.exports = function (app) {
         chunk instanceof Buffer && (chunk = chunk.toString());
         chunk = chunk
           .replace(/(<\/head>)/, staticFiles.tags.join("\n") + "\n\n$1")
-          .replace(/(<\/body>)/, "<script>(new Komnt.Komnt()).enable();</script>\n\n$1");
+          .replace(/(<\/body>)/, "<script>(new Komnt()).enable();</script>\n\n$1");
         res.setHeader('Content-Length', chunk.length);
       }
       write.apply(this, arguments);
