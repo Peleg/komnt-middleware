@@ -1,6 +1,6 @@
 {
   "name": "komnt-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express JS middleware to inject Komnt.js on the page for easy commenting on webpages",
   "main": "index.js",
   "scripts": {
